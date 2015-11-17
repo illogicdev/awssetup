@@ -1,0 +1,2 @@
+use sudo
+restart terminal
