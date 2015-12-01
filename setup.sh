@@ -5,14 +5,13 @@
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y unzip
-sudo apt-get install -y git
 sudo apt-get install -y curl
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
 
 # Load nvm and install latest production node
 source $HOME/.nvm/nvm.sh
 nvm install stable
-nvm use stable
+#nvm use stable
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
@@ -47,6 +46,6 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
-curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
-unzip awscli-bundle.zip
-sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+#curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+#unzip awscli-bundle.zip
+#sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
